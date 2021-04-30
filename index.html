@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Dog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="write.js"></script>
+  </head>
+  <body onload="getRandomPup(this)">
+  	<h1 id="title"><span style="color: #274987">Speed </span><span style="color: #2A6F70">Dog </span><span style="color: #3C719A">Dating</span></h1>
+    <div id="container">
+      	<img id="image" sizes="
+      	(max-width: 320px) 300px,
+        (max-width: 480px) 440px,
+    	800px"/>
+  	</div>
+	<div id="buttons">
+    	<button class="col-sm-6" id="like" onclick="getRandomPup(this)" value="true"><i class="glyphicon glyphicon-thumbs-up" style="margin-left: 15px; margin-top: 10px;"></i></button>
+    	<button class="col-sm-6" id="dislike" onclick="getRandomPup(this)" value="false"><i class="glyphicon glyphicon-thumbs-down" style="margin-left: 15px; margin-top: 10px;"></i></button>
+    </div>
+    <h1 id="dogLikes">Dogs that like you: <a id="clicks">0</a></h1>
+  </body>
+  <style>

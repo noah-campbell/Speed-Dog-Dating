@@ -1,0 +1,80 @@
+body {
+	font-family: 'DM Sans', sans-serif;
+}
+
+#title {
+	position: absolute;
+	font-size: 4em;
+	margin: 2%;
+	font-weight: 900;
+}
+
+#container {
+	border: 15px solid #BBD1E1;
+	background-color: #9BBBD1;
+	border-radius: 5px;
+	height: 35em;
+	width: 25em;
+	display: block;
+	margin-top: 80px;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+#buttons {
+	margin-left: auto;
+	margin-right: auto;
+ 	width: 200px; 	
+}
+
+#like, #dislike {
+	background-color: #7F7F7F;
+	border: 5px solid #B3B3B3;
+	color: white;
+	font-size: 3em;
+	margin-top: 30px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: flex;
+  	padding: 12px;
+  	transition: .3s;
+}
+
+#like {
+	background-color: #7F7F7F;
+	border: 5px solid #B3B3B3;
+	border-right: none;
+}
+
+#dislike {
+	border: 5px solid #7F7F7F;
+	background-color: #4C4C4C;
+	border-left: none;
+}
+
+#like:hover {
+	border-color: #96DC7D;
+	background-color: #7AD25E;
+}
+
+#dislike:hover {
+	border-color: #F29099;
+	background-color: #EB6774;
+}
+
+#image {
+	background-size: cover !important;
+	background-position: 50% 50%;
+	height: 33em;
+	width: 100%;
+}
+
+#dogLikes {
+	text-align: right;
+	margin: 25px;
+	margin-right: 10%;
+}
+
+.swal-overlay {
+  background-color: rgba(164, 224, 144, 0.45);
+}
